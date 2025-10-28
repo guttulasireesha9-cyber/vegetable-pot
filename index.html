@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vegetable Bot 🌽</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(120deg, #a8e063, #56ab2f);
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .bot-box {
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 25px;
+      display: inline-block;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9em;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <h1>🥕 Welcome to Vegetable Bot 🥦</h1>
+  <p>
+    I'm your friendly vegetable assistant! Ask me anything about vegetables,
+    nutrition, farming tips, or healthy recipes.
+  </p>
+
+  <div class="bot-box">
+    <p>💬 Chat with me using the button at the bottom-right corner!</p>
+  </div>
+
+  <footer>© 2025 Vegetable Bot | Powered by IBM Watson Assistant</footer>
+
+  <!-- IBM Watson Assistant Embed Code -->
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "9782ebf0-b306-464d-b96a-f9abc06fe844", // The ID of this integration.
+      region: "eu-de", // The region your integration is hosted in.
+      serviceInstanceID: "bd3701e6-fe00-4b20-b0c2-405217131605", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" +
+      (window.watsonAssistantChatOptions.clientVersion || 'latest') +
+      "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</body>
+</html>
